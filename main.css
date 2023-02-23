@@ -265,3 +265,57 @@ ul li {
     font-size: 1.4rem;
     padding: 15px 30px;
 }
+
+footer {
+    padding: 50px;
+    color: #737373;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.number {
+    margin: 30px 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: #737373;
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+}
+
+.grid-container a {
+    color: #737373;
+    line-height: 2;
+
+}
+
+.grid-container a:hover {
+    text-decoration: underline;
+}
+
+
+#language-bottom {
+    color: #a4a3a3;
+    background-color: transparent;
+    padding: 15px 20px;
+    border: 1px solid #5b5a5a;
+    border-radius: 3px;
+    line-height: 1.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#language-bottom i {
+    margin-right: 0.5rem;
+}
+
+#language-bottom span {
+    margin-right: 1rem;
+}
+
+.copyright {
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
