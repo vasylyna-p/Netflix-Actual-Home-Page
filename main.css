@@ -131,7 +131,6 @@ button {
     margin-left: 7px;
 }
 
-
 section {
     display: flex;
     border-bottom: 8px solid rgb(50, 50, 50);
@@ -140,9 +139,8 @@ section {
     padding: 3% 5% 3% 5%;
 }
 
-
 .feature-text {
-max-width: 48%;
+    max-width: 48%;
 }
 
 .feature-text h2 {
@@ -151,8 +149,8 @@ max-width: 48%;
 }
 
 .feature-text h3 {
-  font-size: 1.7rem;
-  font-weight: 400;
+    font-size: 1.7rem;
+    font-weight: 400;
 }
 
 .info {
@@ -212,26 +210,22 @@ ul li {
     /* transform: rotate(135deg); */
 }
 
-
 .answer {
     border-top: 1.5px solid black;
     padding: 1.2em 1.6em 1.6em 1.2em;
     display: none;
 }
 
-
-
 .open {
     display: block;
 }
-
 
 .bottom-info {
     text-align: center;
     padding: 0 70px;
     display: flex;
     flex-direction: column;
-    border-bottom:#303030 8px solid;
+    border-bottom: #303030 8px solid;
 }
 
 .bottom-info p {
@@ -288,13 +282,11 @@ footer {
 .grid-container a {
     color: #737373;
     line-height: 2;
-
 }
 
 .grid-container a:hover {
     text-decoration: underline;
 }
-
 
 #language-bottom {
     color: #a4a3a3;
@@ -318,4 +310,278 @@ footer {
 .copyright {
     margin-top: 30px;
     font-size: 0.9rem;
+}
+
+@media screen and (min-width: 1350px) {
+    .header {
+        height: 80vh;
+    }
+    section {
+        justify-content: space-around;
+        padding: 3% 20%;
+    }
+
+    .header-bottom {
+        transform: translate(-50%, -100%);
+    }
+    body {
+        font-size: 20px;
+    }
+
+    .header-bottom h1 {
+        font-size: 3.8rem;
+    }
+
+    .questions-container {
+        width: 45%;
+    }
+
+    .bottom-sign-up input {
+        min-width: 30%;
+    }
+
+    footer {
+        max-width: 55%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .header {
+        height: 100vh;
+    }
+    
+    .header-bottom {
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-35%, -50%);
+        margin-top: 70px;
+        text-align: center;
+    }
+
+    .header-bottom p {
+        margin-bottom: 1.2rem;
+        font-size: 1.4rem;
+        max-width: 90%;
+    }
+
+    .email-signup {
+        margin: 0 10%;
+    }
+
+    .email-signup input {
+        height: 55px;
+        outline: 0;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    section:nth-child(2),
+    section:nth-child(4) {
+        flex-direction: column-reverse;
+    }
+    .feature-text {
+        max-width: 95%;
+        text-align: center;
+    }
+
+    .feature-text h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .feature-text h3 {
+        font-size: 1.3rem;
+    }
+
+    .questions-container {
+        margin: 0 3%;
+        width: 90%;
+    }
+    .list-item {
+        font-size: 1.3rem;
+        line-height: 1.2;
+    }
+    .question-btn {
+        font-size: 1.3rem;
+    }
+
+    .question-btn::after {
+        right: 30px;
+        font-size: 2.3rem;
+    }
+    .bottom-info p {
+        font-size: 1.4rem;
+    }
+
+    footer {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 840px){
+    .header-bottom {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translate(0, -50%);
+        margin-top: 70px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .header {
+        height: 80vh;
+    }
+
+    .header-top img {
+        width: 90px;
+        left: 5%;
+        top: 27px;
+    }
+
+    .header-right {
+        position: absolute;
+        right: 0;
+        top: 25px;
+    }
+
+    #language {
+        padding: 0.2rem 0.4rem;
+        font-size: 0.9rem;
+        margin-right: 5px;
+    }
+
+    .btn-sign-in {
+        padding: 0.35rem 0.4rem;
+        margin-right: 10px;
+    }
+
+    .header-bottom {
+        top: 0;
+        left: 0;
+        transform: translate(0%, 15%);
+        text-align: center;
+    }
+
+    .header-bottom h1 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .header-bottom h3 {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+
+    .header-bottom p {
+        margin-bottom: 1rem;
+        font-size: 1.1rem;
+        max-width: 100%;
+    }
+
+    .email-signup {
+        background: white;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .email-signup input {
+        flex: 1;
+        height: 30px;
+    }
+    
+    .email-signup button {
+        font-size: 0.8rem;
+        padding: 8px 10px;
+    }
+
+    .feature-text h2 {
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+
+    .feature-text h3 {
+        font-size: 1.2rem;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    .feature-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .questions-container {
+        width: 100%;
+    }
+
+    .info {
+        padding: 10px 0;
+    }
+    .questions-container h2 {
+        font-size: 1.6rem;
+        text-align: center;
+        margin: 20px;
+    }
+
+    .list-item {
+        font-size: 1.15rem;
+        line-height: 1.1;
+    }
+    .question-btn {
+        font-size: 1.15rem;
+    }
+
+    .question-btn::after {
+        right: 30px;
+        font-size: 1.9rem;
+    }
+    .bottom-info p {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        max-width: 90%;
+    }
+
+    .bottom-info {
+        padding: 0 10px;
+    }
+
+    .bottom-sign-up {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: space-around;
+        align-items: space-between;
+        margin-bottom: 40px;
+    }
+    
+    .bottom-sign-up input {
+        height: 40px;
+        min-width: 80%;
+        margin-bottom: 20px;
+    }
+    
+    .bottom-sign-up button {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    footer {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
